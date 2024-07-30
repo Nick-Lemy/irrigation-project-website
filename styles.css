@@ -1,18 +1,13 @@
 /* Global Styles */
 body {
     font-family: 'Lexend', Arial, sans-serif; /* Apply Lexend font */
-    margin: 10;
-    padding: 10;
     color: #333;
     line-height: 1.6;
 }
 
+
 header h1{
     font-size:larger;
-}
-
-.featured-articles h2 {
-    font-size: larger;
 }
 
 /* Featured Articles Section */
@@ -22,8 +17,12 @@ header h1{
     background-color: #f9f9f9; /* Light background for the section */
 }
 
+.featured-articles h1 {
+    font-size: 30px;
+}
+
 .featured-articles h2 {
-    font-size: 20px; /* Adjust font size */
+/* Adjust font size */
     margin-bottom: 10px; /* Spacing under the heading */
     font-weight: 700; /* Bold heading */
 }
@@ -61,13 +60,13 @@ header h1{
 }
 
 .featured-articles article h3 {
-    font-size: 20px; /* Font size for the article title */
+    font-size: 17px; /* Font size for the article title */
     margin: 0 0 10px 0; /* Spacing around the title */
     font-weight: 600; /* Bold title */
 }
 
 .featured-articles article p {
-    font-size: 16px; /* Font size for the article text */
+    font-size: 14px; /* Font size for the article text */
     margin: 0 0 10px 0; /* Spacing around the text */
     color: #666; /* Grey text color */
 }
@@ -177,18 +176,38 @@ nav ul li a:hover {
     border-bottom: 2px solid #6200ea;
 }
 
-.btn {
-    background-color: #6200ea;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #3700b3;
-}
+/* Button */
+button {
+    position: relative; 
+    width: 160px; 
+    height: 36px; 
+    padding: 0 12px; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: 'Lexend', Arial, sans-serif; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #FFFFFFFF; /* white */
+    background: #6D31EDFF; /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 6px; /* border-l */
+  }
+  /* Hover */
+  button:hover {
+    color: #FFFFFFFF; /* white */
+    background: #5113D7FF; /* primary-600 */
+  }
+  /* Pressed */
+  button:hover:active {
+    color: #FFFFFFFF; /* white */
+    background: #3F0EA6FF; /* primary-700 */
+  }
+  /* Disabled */
+  button:disabled {
+    opacity: 0.4; 
+  }
 
 /* Ensures the button is in line with the menu */
 .header-actions {
@@ -210,7 +229,7 @@ nav ul li a:hover {
     justify-content: left;
     align-items: center;
     text-align: left;
-    height: 70vh; /* Adjust height as needed */
+    height: 500px; /* Adjust height as needed */
 }
 
 .hero:before {
@@ -301,20 +320,25 @@ article small {
     padding: 50px 0;
 }
 
+.subscription h3 {
+    color: #6200ea;
+}
+
 .subscription p {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.subscription .btn {
-    margin-top: 20px;
-}
 
 /* Footer */
 footer {
     background-color: #f8f8f8;
     padding: 40px 0;
     text-align: center;
+}
+
+footer h2{
+    color: #6200ea;
 }
 
 .footer-logo {
