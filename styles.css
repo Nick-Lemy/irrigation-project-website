@@ -7,6 +7,14 @@ body {
     line-height: 1.6;
 }
 
+header h1{
+    font-size:larger;
+}
+
+.featured-articles h2 {
+    font-size: larger;
+}
+
 /* Featured Articles Section */
 .featured-articles {
     padding: 60px 0;
@@ -69,16 +77,60 @@ body {
     color: #999; /* Light grey text color */
 }
 
-
+/*Text box*/
+/* Textbox 2 */
+.textbox {
+    position: relative; 
+    opacity: 1; 
+  }
+  .textbox input {
+    width: 268px; 
+    height: 36px; 
+    padding-left: 34px; 
+    padding-right: 12px; 
+    font-family: Manrope; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    background: #EAECF0FF; /* neutral-250 */
+    border-radius: 4px 0px 0px 4px; /* border-tl-m border-bl-m */
+    border-width: 0px; 
+    outline: none; 
+  }
+  .textbox svg {
+    position: relative; 
+    right: 12px; 
+    width: 16px; 
+    height: 16px; 
+    fill: #171A1FFF; /* neutral-900 */
+  }
+  .textbox svg.left {
+    left: 12px; 
+  }
+  /* hover */
+  .textbox input:hover {
+    color: #BDC1CAFF; /* neutral-400 */
+    background: #EAECF0FF; /* neutral-250 */
+  }
+  /* focused */
+  .textbox input:focused {
+    color: #BDC1CAFF; /* neutral-400 */
+    background: #FFFFFFFF; /* white */
+  }
+  /* disabled */
+  .textbox input:disabled {
+    color: #BDC1CAFF; /* neutral-400 */
+    background: #EAECF0FF; /* neutral-250 */
+  }
+  .textbox :disabled + .icon, .textbox :disabled + .icon + .icon {
+    fill: #171A1FFF; /* neutral-900 */
+  }
 header {
     background-color: #f8f8f8;
-    padding: 20px 20px;
+    padding: 0px 15px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-header h1{
-    font-size: 13;
-}
 
 header .container {
     display: flex;
@@ -148,12 +200,17 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     background-image: url('Irrigation.jpg');
-    background-size: 100%;
+    background-size: cover; /* Adjusted from 100% to cover */
     background-position: center;
     color: #fff;
-    text-align: left;
+    text-align: center; /* Changed from left to center */
     padding: 100px 50px;
     position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    height: 70vh; /* Adjust height as needed */
 }
 
 .hero:before {
@@ -169,6 +226,7 @@ nav ul li a:hover {
 .hero-content {
     position: relative;
     z-index: 2;
+    padding: 10px 10px;
 }
 
 .hero h2 {
